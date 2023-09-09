@@ -1,0 +1,31 @@
+CRITICAL - 2023-09-09 13:56:50 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Integrante given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 154.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(154): mysqli_result->fetch_object('App\\Entities\\Integrante')
+ 2 SYSTEMPATH\Database\BaseResult.php(159): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Integrante')
+ 3 SYSTEMPATH\Database\BaseResult.php(114): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Integrante')
+ 4 SYSTEMPATH\Model.php(238): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Integrante')
+ 5 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\IntegranteModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\IntegranteController.php(24): App\Models\IntegranteModel->findAllWithPais()
+ 8 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\IntegranteController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntegranteController))
+10 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 14:05:40 --> Invalid file: "artistas/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artistas/index.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('artistas/index', [], true)
+ 3 APPPATH\Controllers\IntegranteController.php(37): view('artistas/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\IntegranteController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntegranteController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-09 15:15:19 --> Invalid file: "artistas/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artistas/edit.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('artistas/edit', [], true)
+ 3 APPPATH\Controllers\IntegranteController.php(98): view('artistas/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\IntegranteController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\IntegranteController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
